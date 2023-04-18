@@ -68,6 +68,7 @@ h1{
     justify-content: center;
     color: #fff;
     flex-direction: column;
+    padding: 20px;
 }
 .work-container:hover .work-content{
     background: #29bdb0ed;
@@ -217,7 +218,24 @@ h1{
 .space{
   margin-top: 40px;
 }
-
+footer{
+    
+    padding: 60px 15px;
+    text-align: center;
+}
+footer p{
+    margin: 0;
+}
+footer a{
+    transition: .5s ease-in-out;
+    color: #616161;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+}
+footer a:hover{
+    color: #29BDB0;
+}
 @media (max-width: 1600px){
     .work-container {
         height: 40vh;
@@ -403,6 +421,11 @@ h1{
         padding: 0px 25px;
         font-size: 12px;
     }
+    .info {
+        font-size: 10px;
+        letter-spacing: 0.3px;
+        margin: 0 50px;
+    }
 }
 @media (max-width: 360px){
     header {
@@ -419,11 +442,7 @@ h1{
         line-height: 22px;
         font-size: 14px;
     }
-    .info {
-        font-size: 10px;
-        letter-spacing: 0.3px;
-        margin: 0 50px;
-    }
+    
     .proj_head {
         font-size: 25px;
     }
