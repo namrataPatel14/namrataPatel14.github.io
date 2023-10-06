@@ -265,25 +265,101 @@ video {
   position: relative;
   margin: 80px;
 }
-.img_flow-container::after {
+.router {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 250px;
+  height: 100%;
+  justify-content: space-between;
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  margin: 70px auto;
+}
+.route-arrow{
   position: absolute;
-  content: "";
+  height: 100%;
+  width: 1px;
+  background: #29bdb0;
+}
+.route-center {
+  height: 1px;
+  width: 100%;
+  background: #29bdb0;
+  position: absolute;
+  bottom: 28px;
+  
+}
+.route-arrow.left{
+  transform: rotate(55deg);
+  left: 28%;
+}
+.route-arrow.right{
+  transform: rotate(-55deg);
+  right: 28%;
+}
+.inner-router{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+.route{
+  max-width: 150px;
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 15px;
+  z-index: 9;
+  background: #383838;
+  color: #fecc1b;
+  font-weight: 400;
+}
+.route-head {
+  max-width: 200px;
+  width: 100%;
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 15px;
+  z-index: 9;
+  background: #383838;
+  color: #fecc1b;
+}
+.route-head a{
+  text-decoration: none;
+}
+.line{
+  position: absolute;
   height: 2px;
   width: 100%;
-  top: 50%;
   background: #29bdb0;
+  top: 50%;
+  left: 0;
+  right: 0;
 }
 .img_flow-container img {
   max-width: 130px;
   width: 100%;
 }
-.img_flow-container div {
+.img_flow-container .circle {
   border: 2px solid #29bdb0;
   border-radius: 100%;
   padding: 29px;
   background: #fff;
   z-index: 9;
 }
+.img-router{
+  max-width: 100px;
+  width: 100%;
+  margin-top: 20px;
+}
+.git-img{
+  max-width: 60px;
+  width: 100%;
+}
+
 @media (max-width: 1600px) {
   /* .work-container {
         height: 40vh;
@@ -417,7 +493,7 @@ video {
   .img_flow-container img {
     max-width: 50px;
   }
-  .img_flow-container div {
+  .img_flow-container .circle {
     padding: 20px;
   }
   .work-content .detail {
@@ -531,7 +607,7 @@ video {
   .img_flow-container {
     margin: 20px;
   }
-  .img_flow-container div {
+  .img_flow-container .circle {
     padding: 15px;
   }
   .img_flow-container img {

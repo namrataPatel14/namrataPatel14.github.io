@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,7 +28,7 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-sm">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand wow fadeInLeft" href="index.html">
           <img
             src="assets/logo.png"
             width="100%"
@@ -50,17 +51,17 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
+            <li class="nav-item wow fadeInDown" data-wow-duration="1.5s">
               <a class="nav-link" href="index.html">Work </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item wow fadeInDown" data-wow-duration="1.5s">
               <a class="nav-link" href="About.html">About</a>
             </li>
           </ul>
         </div>
       </nav>
-      <h2 class="proj_head">NetflixGPT</h2>
-      <p class="info">Movie Searching Website | React.js Project</p>
+      <h2 class="proj_head wow fadeIn" data-wow-duration="1.5s">NetflixGPT</h2>
+      <p class="info wow fadeInDown" data-wow-duration="1.5s">Movie Searching Website | React.js Project</p>
     </header>
     <section class="project_container">
       <div class="container">
@@ -68,7 +69,7 @@
           <div class="col-md-12">
             
             <div class="project_main_content">
-              <p>
+              <p class="wow fadeIn"  data-wow-duration="1.5s">
                 This project combines the power of React, Tailwind CSS, and
                 Redux Toolkit to create an engaging web application for movie
                 enthusiasts.<br />
@@ -78,15 +79,15 @@
                 <div class="row mr-20">
                   
                   <div class="col-md-4">
-                    <h4>Responsive Design</h4>
-                    <p>
+                    <h4 class="wow fadeIn" data-wow-duration="1.6s">Responsive Design</h4>
+                    <p class="wow fadeIn"  data-wow-duration="1.6s">
                         I utilized Tailwind CSS to ensure that the web app looks
                         great and functions seamlessly on various devices.
                       </p>
                     <div class="phone_container">
                       <img
                         src="assets/iphone.png"
-                        class="img-fluid"
+                        class="img-fluid wow fadeIn" data-wow-duration="1.6s"
                         alt="process"
                       />
                      
@@ -96,7 +97,7 @@
                   <div class="col-md-8">
                     <img
                   src="assets/ipad.png"
-                  class="img-fluid ipad"
+                  class="img-fluid ipad wow fadeIn" data-wow-duration="1.6s"
                   alt="process"
                 />
                   </div>
@@ -105,89 +106,130 @@
                 
               </div>
               <div class="project_content">
-                <h4>Authentication</h4>
+                <h4 class="wow fadeIn" data-wow-duration="1.6s">Authentication</h4>
                 <div class="img_flow-container">
-                  <div class="react_img">
+                  <div class="react_img wow rollIn circle" data-wow-duration="1s">
                     <img
                     src="assets/React-icon.png"
                     class="img-fluid"
+                    
                     alt="icon"
                   />
                   
                   </div>
-                  <div class="firebase_img">
+                  <div class="line wow fadeIn" data-wow-delay="1.5s" data-wow-duration="1.5s"></div>
+                  <div class="firebase_img wow flipInX circle" data-wow-delay=".5s" data-wow-duration="1s">
                     <img
                     src="assets/firebase.png"
-                    class="img-fluid"
+                    class="img-fluid wow fadeIn"
+                    data-wow-duration="1.6s"
                     alt="icon"
                   />
                   </div>
-                  <div class="success">
+                  <div class="success wow zoomIn  circle" data-wow-delay="1s" data-wow-duration="1s">
                     <img
                     src="assets/authentication-icon.png"
                     class="img-fluid"
+                    
                     alt="icon"
                   />
                   </div>
                   
                 </div>
-                <p>
+                <p class="wow fadeIn" data-wow-duration="1.6s">
                   I've successfully implemented Firebase for user authentication, enabling users to sign up, log in, and securely store their data in a Firebase database.
                 </p>
 
                 
               </div>
               <div class="project_content">
-                <h4>Routing</h4>
-                <p>
-                  For seamless navigation, I incorporated react-router-dom for
-                  routing purposes.
+                <h4 class="wow fadeIn" data-wow-duration="1.6s">Data Integration</h4>
+                <p class="wow fadeIn" data-wow-duration="1.6s">
+                  The app seamlessly integrates with the TMDB API to fetch and
+                  display movie data.
                   <a
-                    class="link_prototype"
-                    href="https://reactrouter.com/en/main"
-                    >React-router-dom</a
+                    class="link_prototype wow flipInX"
+                    data-wow-duration="1.6s"
+                    href="https://developer.themoviedb.org/reference/intro/getting-started"
+                    >TMDB API</a
                   >
                 </p>
               </div>
               <div class="project_content space">
-                <h4>State Management</h4>
-                <p>
+                <h4 class="wow fadeIn" data-wow-duration="1.6s">State Management</h4>
+                <p class="wow fadeIn" data-wow-duration="1.6s">
                   I harnessed the capabilities of Redux Toolkit (RTK) to
                   efficiently manage and maintain the data layer within the
                   application.
                   <a
-                class="link_prototype"
+                class="link_prototype wow flipInX"
+                data-wow-duration="1.6s"
                 href="https://redux-toolkit.js.org/"
                 >Redux Toolkit</a
               >
                 </p>
                 
               </div>
-
               <div class="project_content">
-                <h4>Data Integration</h4>
-                <p>
-                  The app seamlessly integrates with the TMDB API to fetch and
-                  display movie data.
-                  <a
-                    class="link_prototype"
-                    href="https://developer.themoviedb.org/reference/intro/getting-started"
-                    >TMDB API</a
-                  >
+                <h4 class="wow fadeIn" data-wow-duration="1.6s">Routing</h4>
+                <p class="wow fadeIn" data-wow-duration="1.6s">
+                  For seamless navigation, I incorporated react-router-dom for
+                  routing purposes.
+                  
                 </p>
+                <div class="router">
+                  <span class="route-head wow fadeIn" data-wow-duration="1.6s">
+                    <!-- <a
+                      class="link_prototype wow flipInX"
+                      data-wow-duration="1.6s"
+                      href="https://reactrouter.com/en/main"
+                      >React-router-dom</a
+                    > -->
+                    createRoot
+                  </span>
+                  <div class="route-arrow left wow fadeIn" data-wow-delay=".5s"></div>
+                  <div class="route-arrow right wow fadeIn" data-wow-delay=".5s"></div>
+                    <img
+                    src="assets/react-router.svg"
+                    class="img-router wow flipInX"
+                    data-wow-duration="1.6s"
+                    alt="process"
+                  />
+                  <a
+                      class="link_prototype wow flipInX"
+                      data-wow-duration="1.6s"
+                      href="https://reactrouter.com/en/main"
+                      >React-router-dom</a
+                    >
+                  <div class="inner-router">
+                    <div class="route wow fadeInDown">
+                      <span>Home.js</span>
+                    </div>
+                    
+                    <div class="route wow fadeInDown">
+                      <span>GptSearch.js</span>
+                    </div>
+                    <div class="route-center wow fadeIn" data-wow-delay=".8s"></div>
+                  </div>
+                  
+                </div>
+                
               </div>
+              
+
+              
               <div class="project_content">
-                <h4>GPT Search & Shimmer UI</h4>
-                <p>
+                <h4 class="wow fadeIn" data-wow-duration="1.6s">GPT Search & Shimmer UI</h4>
+                <p class="wow fadeIn" data-wow-duration="1.6s">
                   Leveraging the power of OpenAI APIs, I implemented a natural
                   language search feature using GPT, allowing users to search
                   for movies in a more conversational manner.
                 </p>
-                <p>
+                <p class="wow fadeIn" data-wow-duration="1.6s">
                   I've also implemented a shimmer UI effect for a visually
                   appealing page-loading experience.
                 </p>
-                <div class="video_src">
+                <div class="video_src wow fadeIn" data-wow-duration="1.6s">
                   <iframe 
                   class="iframe_gpt"
                   src="https://www.youtube.com/embed/mouNTltxwn8?si=I19HkqG4ZqBhIjHs?autoplay=1&loop=1" 
@@ -196,45 +238,52 @@
                   </div>
               </div>
               <div class="project_content">
-                <h4>Clean Code Practices</h4>
-                <p>
+                <h4 class="wow fadeIn" data-wow-duration="1.6s">Clean Code Practices</h4>
+                <p class="wow fadeIn" data-wow-duration="1.6s">
                   To ensure maintainability, I utilized React hooks and created
                   custom hooks, contributing to cleaner and more organized code.
                 </p>
                 <img
                   src="assets/hook.png"
-                  class="img-fluid persona_apartment"
+                  class="img-fluid persona_apartment wow fadeIn"
+                  data-wow-duration="1.6s"
                   alt="process"
                 />
                 <img
                   src="assets/hook1.png"
-                  class="img-fluid persona_apartment"
+                  class="img-fluid persona_apartment wow fadeIn"
+                  data-wow-duration="1.6s"
                   alt="process"
                 />
               </div>
+              
               <div class="project_content">
-                <h4>Multi-Language Support</h4>
-                <p>
+                <h4 class="wow fadeIn" data-wow-duration="1.6s">Multi-Language Support</h4>
+                <p class="wow fadeIn" data-wow-duration="1.6s">
                   The app features multi-language support, making it accessible
                   to a wider audience.
                 </p>
               </div>
+              
               <div class="project_content">
-                <h4>Component Reusability</h4>
-                <p>
+                <h4 class="wow fadeIn" data-wow-duration="1.6s">Component Reusability</h4>
+                <p class="wow fadeIn" data-wow-duration="1.6s">
                   I designed and built reusable components to enhance code
                   efficiency and promote scalability.
                 </p>
               </div>
               
               <div class="project_content">
-                <h4>Deployment</h4>
-                <p>
+                <h4 class="wow fadeIn" data-wow-duration="1.6s">Deployment</h4>
+               
+                
+                <p class="wow fadeIn" data-wow-duration="1.6s">
                     The app has been successfully deployed to production using Firebase, ensuring it's accessible to users worldwide.
                     You can explore this project and experience it for yourself by checking out the GitHub repository and the hosted version at the following links:
                 </p>
-                <p>GitHub: <a href="https://lnkd.in/gg__Qge6" class="link_prototype" target="_blank">https://lnkd.in/gg__Qge6</a></p>
-                <p>Hosted App: <a href="https://lnkd.in/gaCf8tFy" class="link_prototype"  target="_blank">https://lnkd.in/gaCf8tFy</a></p>
+                <p class="wow fadeIn" data-wow-duration="1.6s">GitHub: <a href="https://lnkd.in/gg__Qge6" class="link_prototype wow flipInX" data-wow-duration="1.6s" target="_blank">https://lnkd.in/gg__Qge6</a></p>
+               
+                <p class="wow fadeIn" data-wow-duration="1.6s">Hosted App: <a href="https://lnkd.in/gaCf8tFy" class="link_prototype wow flipInX" data-wow-duration="1.6s" target="_blank">https://lnkd.in/gaCf8tFy</a></p>
               </div>
             </div>
           </div>
@@ -251,4 +300,17 @@
       </p>
     </footer>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+      wow = new WOW(
+      {
+          boxClass:     'wow',      // default
+          animateClass: 'animated', // change this if you are not using animate.css
+          offset:       0,          // default
+          mobile:       true,       // keep it on mobile
+          live:         true        // track if element updates
+        }
+      )
+    wow.init();
+  </script>
 </html>
