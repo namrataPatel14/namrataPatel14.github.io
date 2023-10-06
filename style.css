@@ -613,8 +613,27 @@ video {
   .img_flow-container img {
     max-width: 35px;
   }
+  .route-arrow.right {
+    transform: rotate(-47deg);
+    
+ }
+ .route-arrow.left{
+  transform: rotate(47deg);
+ }
+ .route-arrow {
+  height: 81%;
+  top: 23px;
+}
+.img-router {
+  max-width: 70px;
+  
+}
 }
 @media (max-width: 360px) {
+  .route-arrow {
+    height: 82%;
+    top: 18px;
+}
   header {
     padding: 0;
   }
